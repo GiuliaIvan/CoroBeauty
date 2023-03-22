@@ -589,6 +589,10 @@ main .recent-orders a{
         width: 83vw;
     }
 
+    main .recent-orders a{
+        margin-left: -8.8rem;
+    }
+
     main table tbody tr td:last-child,
     main table tbody tr td:first-child {
         display: none;
@@ -665,6 +669,10 @@ main .recent-orders a{
     main .recent-orders table{
         width: 100%;
         margin: 0;
+    }
+
+    main .recent-orders a{
+        margin-left: 0;
     }
 
     .right{
