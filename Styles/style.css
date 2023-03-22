@@ -549,7 +549,7 @@ main .recent-orders a{
 /* ======================= MEDIA QUERIES ======================= */
 
 /* TABLETS AND SMALL LAPTOPS  */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .container {
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
