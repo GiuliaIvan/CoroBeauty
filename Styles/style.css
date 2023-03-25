@@ -439,6 +439,9 @@ main .recent-orders a{
     display: flex;
     gap: 2rem;
     text-align: right;
+}
+
+.profile-photo {
     cursor: pointer;
 }
 
@@ -455,10 +458,11 @@ main .recent-orders a{
 
 .open-menu{
     max-height: 400px;
+    /* z-index: -1; */
 }
 
 .sub-menu {
-    background: #fff;
+    background: var(--color-white);
     padding: 20px;
     margin: 10px;
     border-radius: var(--card-border-radius);
@@ -491,23 +495,23 @@ main .recent-orders a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #525255;
     margin: 12px 0;
+    /* color: var(--color-info-dark); */
 }
 
 .sub-menu-link p{
     width: 100%;
-}
-
-.sub-menu-link img{
-    width: 40px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    padding: 8px;
-    margin-right: 15px;
+    color: var(--color-dark);
 }
 
 .sub-menu-link span {
+    background: var(--color-info-dark);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+    width: 50px;
+    margin-right: 15px;
     font-size: 22px;
     transition: transform 0.5s;
     padding-left: 5px;
@@ -796,5 +800,13 @@ main .recent-orders a{
 
     .right .top button span {
         font-size: 2rem;
+    }
+
+    .sub-menu {
+        margin-top: 50px;
+    }
+
+    .open-menu {
+        z-index: -1;
     }
 }
