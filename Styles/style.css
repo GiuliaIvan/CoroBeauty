@@ -667,6 +667,10 @@ main .recent-orders a{
         gap: 0;
     }
 
+    main .insights > div {
+        margin-top: 1rem;
+    }
+
     main .recent-orders{
         width: 94%;
         position: absolute;

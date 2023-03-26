@@ -24,16 +24,17 @@ themeToggler.addEventListener("click", () => {
 Orders.forEach((order) => {
   const tr = document.createElement("tr");
   const trContent = `
-                        <td>${order.productName}</td>
-                        <td>${order.productNumber}</td>
-                        <td>${order.paymentStatus}</td>
+                        <td>${order.serviceName}</td>
+                        <td>${order.dateTime}</td>
+                        <td>${order.price}</td>
                         <td class="${
-                          order.shipping === "Declined"
+                          order.status === "Declined"
                             ? "danger"
-                            : order.shipping === "pending"
+                            : order.status === "Pending"
                             ? "warning"
+                            : order.status === "Confirmed" ? "success"
                             : "primary"
-                        }">${order.shipping}</td>
+                        }">${order.status}</td>
                         <td class="primary">Details</td>
                         `;
   tr.innerHTML = trContent;

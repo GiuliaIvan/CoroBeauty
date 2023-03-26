@@ -1,50 +1,50 @@
 const Orders = [
   {
-    productName: "Foldable Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Pending",
+    serviceName: "Wedding make up",
+    dateTime: "Apr 22, 15:00",
+    price: "300",
+    status: "Confirmed",
   },
 
   {
-    productName: "Lavender Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Declined",
+    serviceName: "Ultrasounds & lifting treatment",
+    dateTime: "Tue, 08:30",
+    price: "320",
+    status: "Pending",
   },
 
   {
-    productName: "Ruko Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Pending",
+    serviceName: "Total waxing",
+    dateTime: "Mar 25, 12:45",
+    price: "180",
+    status: "Declined",
   },
 
   {
-    productName: "Drone Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Delivered",
+    serviceName: "Lash & brow lifting",
+    dateTime: "Feb 12, 14:00",
+    price: "150",
+    status: "Done",
   },
 
   {
-    productName: "GPS Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Pending",
+    serviceName: "Eyelashes 3D",
+    dateTime: "Jan 31, 10:15",
+    price: "200",
+    status: "Done",
   },
 
   {
-    productName: "DJI Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Pending",
+    serviceName: "Microblading",
+    dateTime: "Jan 22, 12:00",
+    price: "270",
+    status: "Done",
   },
 
   {
-    productName: "Lozenge Mini Drone",
-    productNumber: "8531",
-    paymentStatus: "Due",
-    shipping: "Pending",
+    serviceName: "Hibrid micropigmentation",
+    dateTime: "Jan 8, 16:10",
+    price: "120",
+    status: "Done",
   },
 ];
