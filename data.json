@@ -1,0 +1,90 @@
+{
+  "Bookings": {
+    "bookingsUser1": {
+      "appointment1": {
+        "dateTime": "Apr 22, 15:00",
+        "price": 300,
+        "serviceName": "Wedding make up",
+        "status": "Confirmed"
+      },
+      "appointment2": {
+        "dateTime": "Tue, 08:30",
+        "price": 320,
+        "serviceName": "Ultrasounds & lifting treatment",
+        "status": "Pending"
+      },
+      "appointment3": {
+        "dateTime": "Mar 25, 12:45",
+        "price": 180,
+        "serviceName": "Total waxing",
+        "status": "Declined"
+      },
+      "appointment4": {
+        "dateTime": "Feb 12, 14:00",
+        "price": 150,
+        "serviceName": "Lash & brow lifting",
+        "status": "Done"
+      },
+      "appointment5": {
+        "dateTime": "Jan 31, 10:15",
+        "price": 200,
+        "serviceName": "Eyelashes 3D",
+        "status": "Done"
+      },
+      "appointment6": {
+        "dateTime": "Jan 22, 12:00",
+        "price": 270,
+        "serviceName": "Microblading",
+        "status": "Done"
+      },
+      "appointment7": {
+        "dateTime": "Jan 8, 16:10",
+        "price": 120,
+        "serviceName": "Hibrid micropigmentation",
+        "status": "Done"
+      }
+    },
+
+    "bookingsUser2": {
+      "appointment1": {
+        "dateTime": "Feb 20, 14:55",
+        "price": 110,
+        "serviceName": "Lashes",
+        "status": "Done"
+      },
+      "appointment2": {
+        "dateTime": "Mar 2, 18:00",
+        "price": 70,
+        "serviceName": "Eyebrows",
+        "status": "Done"
+      }
+    }
+  },
+
+  "Users": {
+    "id1": {
+      "bookings": "bookingsUser1",
+      "info": {
+        "age": 18,
+        "mail": "natalia@mail.com",
+        "name": "\"Natalia\"",
+        "phone": 40742589923,
+        "profilePicture": "url"
+      },
+      "password": "natalia1234",
+      "username": "Natalia"
+    },
+    "id2": {
+      "bookings": "bookingsUser2",
+      "info": {
+        "age": 21,
+        "mail": "rafa@mail.com",
+        "name": "Rafa",
+        "phone": 4077035520,
+        "profilePicture": "url"
+      },
+      "password": "rafa1234",
+      "username": "Rafa"
+    }
+  }
+}
