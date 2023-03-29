@@ -1,345 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coro Beauty</title>
-    <!-- Material CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <!-- Links -->
-    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Studio Hair</title>
+    <link rel="shortcut icon" href="assests/img/favicon.png" type="image/x-icon">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- estilo css -->
+    <link rel="stylesheet" href="/Styles/website.css">
 </head>
+
 <body>
-    <div class="container">
-
-        <!---------------- START OF ASIDE SECTION ---------------->
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="./Assets/images/logo.png" alt="Logo image">
-                    <h2>EGA<span class="danger">TOR</span></h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
-                </div>
+    <header class="l-header" id="header">
+        <div class="navbar container flex">
+            <div class="brand">
+                <a href="#"><img src="assests/img/logo.svg" alt="Studio Hair"></a>
+            </div>
+            <div class="nav" id="nav">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="#" class="nav__link active-link">home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">quem somos</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">serviços</a></li>
+                    <li class="nav__item"><a href="#package" class="nav__link">pacotes</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link">galeria</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">contato</a></li>
+                </ul>
             </div>
 
-            <div class="sidebar">
-                <a href="./Pages/mainIndex.html">
-                    <span class="material-icons-sharp">home</span>
-                    <h3>Home</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">face</span>
-                    <h3>Services</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">history_edu</span>
-                    <h3>About</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">phone</span>
-                    <h3>Contact</h3>
-                </a>
-                <a href="./index.html" class="active">
-                    <span class="material-icons-sharp">fingerprint</span>
-                    <h3>Profile</h3>
-                    <span class="message-count" style="color:white">26</span>
-                </a>
-                <!-- <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Unimportant</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Unimportant</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Unimportant</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Unimportant</h3>
-                </a> -->
-                <a href="#">
-                    <span class="material-icons-sharp">logout</span>
-                    <h3>Log out</h3>
-                </a>
-            </div>
-        </aside>
-        <!---------------- END OF ASIDE SECTION ---------------->
-
-        <main>
-            <!-- <h1>Dashboard</h1> -->
-
-            <div class="date">
-                <input type="date">
-            </div>
-
-            <h2>Discounts</h2>
-
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Appointment</h3>
-                            <h1>10% OFF</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>2/3</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">At 2 appointments / month, the next one will be 10% off</small>
-                </div>
-                <!------------ END OF SALES ------------>
-
-                <div class="expenses">
-                    <span class="material-icons-sharp">bar_chart</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Make-up</h3>
-                            <h1>75% OFF</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>62%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">At 6 Make-Up appointments, the next one will be 75% off</small>
-                </div>
-                <!------------ END OF EXPENSES ------------>
-
-                <div class="income">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Services</h3>
-                            <h1>25% OFF</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>44%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Get 25% off any service after 6 monthly services</small>
-                </div>
-                <!------------ END OF INCOME ------------>
-            </div>
-            <!------------ END OF INSIGHTS ------------>
-
-            <div class="recent-orders">
-                <h2>Bookings</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Service Name</th>
-                            <th>Date & Time</th>
-                            <th>Price</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr>
-                            <td>Foldable Mini Drone</td>
-                            <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr> -->
-                        
-                    </tbody>
-                </table>
-                <a href="#">Show All</a>
-            </div>
-        </main>
-        <!------------ END OF MAIN ------------>
-
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">menu</span>
-                </button>
-                <div class="theme-toggler">
-                    <span class="material-icons-sharp active">light_mode</span>
-                    <span class="material-icons-sharp">dark_mode</span>
-                </div>
-                <div class="profile">
-                    <div class="info">
-                        <p>Hey, <b>Daniel</b></p>
-                        <small class="text-muted">daniel@mail.com</small>
-                    </div>
-                    <div class="profile-photo">
-                        <img src="./Assets/images/profile-1.jpg" alt="Profile picture" onclick="toggleMenu()">
-                    </div>
-
-                    <div class="sub-menu-wrap" id="subMenu">
-                        <div class="sub-menu">
-                            <!-- <div class="user-info">
-                                <img src="/Assets/images/profile-2.jpg" alt="">
-                                <h3>James</h3>
-                            </div>
-                            <hr> -->
-
-                            <a href="#" class="sub-menu-link">
-                                <span class="material-icons-sharp">person</span>
-                                <p>Edit Profile</p>
-                            </a>
-                            <a href="#" class="sub-menu-link">
-                                <span class="material-icons-sharp">settings</span>
-                                <p>Settings</p>
-                            </a>
-                            <a href="#" class="sub-menu-link">
-                                <span class="material-icons-sharp">help</span>
-                                <p>Help</p>
-                            </a>
-                            <a href="#" class="sub-menu-link">
-                                <span class="material-icons-sharp">logout</span>
-                                <p>Log out</p>
-                            </a>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- END OF TOP -->
-            <div class="recent-updates">
-                <h2>Announcements</h2>
-                <div class="updates">
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="./Assets/images/profile-2.jpg" alt="Profile picture">
-                        </div>
-                        <div class="message">
-                            <p><b>Easter break -</b> we will be closed upcoming 
-                            Friday, Monday and Tuesday</p>
-                            <!-- <small class="text-muted">2 Minutes Ago</small> -->
-                        </div>
-                    </div>
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="./Assets/images/profile-3.jpg" alt="Profile picture">
-                        </div>
-                        <div class="message">
-                            <p><b>Weddings season -</b> get 15% off any make-up service
-                            booked in the next 3 months</p>
-                            <!-- <small class="text-muted">2 Minutes Ago</small> -->
-                        </div>
-                    </div>
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="./Assets/images/profile-4.jpg" alt="Profile picture">
-                        </div>
-                        <div class="message">
-                            <p><b>New service -</b> introducing our new hydrating 
-                            facial treatment!</p>
-                            <!-- <small class="text-muted">2 Minutes Ago</small> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!---------------------- END OF UPDATES  ---------------------->
-            <div class="sales-analytics">
-                <h2>Sales Analytics</h2>
-                <div class="item online">
-                    <div class="icon">
-                        <span class="material-icons-sharp">shopping_cart</span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>ONLINE ORDERS</h3>
-                            <small class="text-muted">Last 24 Hours</small>
-                        </div>
-                        <h5 class="success">+39%</h5>
-                        <h3>3849</h3>
-                    </div>
-                </div>
-            
-                <div class="item offline">
-                    <div class="icon">
-                        <span class="material-icons-sharp">local_mall</span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>OFFLINE ORDERS</h3>
-                            <small class="text-muted">Last 24 Hours</small>
-                        </div>
-                        <h5 class="danger">-19%</h5>
-                        <h3>1100</h3>
-                    </div>
-                </div>
-
-                <div class="item customers">
-                    <div class="icon">
-                        <span class="material-icons-sharp">person</span>
-                    </div>
-                    <div class="right">
-                        <div class="info">
-                            <h3>NEW CUSTOMERS</h3>
-                            <small class="text-muted">Last 24 Hours</small>
-                        </div>
-                        <h5 class="success">+25%</h5>
-                        <h3>849</h3>
-                    </div>
-                </div>
-                
-                <div class="item add-product">
-                    <div>
-                        <span class="material-icons-sharp">add</span>
-                        <h3>Add Booking</h3>
-                    </div>
-                </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
         </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="hero__img">
+                        <img src="assests/img/home-img.png" alt="">
+                    </div>
+                    <div class="hero__content">
+                        <h1>Seu Grande dia<br><span>em Grande estilo</span></h1>
+                        <p>Venha conhecer nosso cantinho da noiva e aproveite para agendar sua data.</p>
+                        <a href="#" class="btn btn__outline"><i class='bx bxl-whatsapp'></i>agende seu horário</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section__title">
+                        <h1>Nossa história</h1>
+                        <span>Studio Hair</span>
+                    </div>
+                    <div class="about__detail">
+                        <div class="about__detail__content">
+                            <div class="about__img">
+                                <img src="assests/img/about-img.jpg" alt="">
+                            </div>
+                            <div class="about__descripion">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Velit possimus a sint.</p>
+                                <p>Obcaecati porro accusamus iusto rem aperiam. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Velit possimus a sint.</p>
+                                <p>Eligendi nostrum architecto
+                                    quibusdam. Neque odio enim quasi ad culpa similique
+                                    quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services section" id="services">
+            <div class="services__content">
+                <div class="row">
+                    <div class="section__title">
+                        <h1>Serviços</h1>
+                        <span>Que realziamos</span>
+                    </div>
+                </div>
+                <div class="services__content__descripion grid container">
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/manicure.png" alt="">
+                            <p>manicure</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/pedicure.png" alt="">
+                            <p>pedicure</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/maquiagem.png" alt="">
+                            <p>maquiagem</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/pentado.png" alt="">
+                            <p>penteado</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/corte.png" alt="">
+                            <p>corte de cabelo</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/sobrancelha.png" alt="">
+                            <p>design de sobrancelha</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/depilacao.png" alt="">
+                            <p>depiliação com cera</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inner">
+                            <img src="assests/img/servicos/limpeza.png" alt="">
+                            <p>limpeza de pele</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="package section" id="package">
+            <div class="package_-content">
+                <div class="row">
+                    <div class="section__title">
+                        <h1>Pacotes promocionais</h1>
+                        <span>Para seu dia de noiva</span>
+                    </div>
+                </div>
+                <div class="package__cards row container">
+                    <div class="card">
+                        <div class="card__title">
+                            <h1>Bronze</h1>
+                        </div>
+                        <div class="card__items">
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Penteado</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Maquiagem</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Unhas<span>(tradicional francesa)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Depilação<span>(1 area)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Design de sobrancelha</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Limpeza de pele</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Sala de noiva reservada</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Mesa de frutas</p>
+                            </div>
+                            <button class="btn">quero esse</button>
+                        </div>
+                    </div>
 
-    </div>
+                    <div class="card">
+                        <div class="card__title">
+                            <h1>Prata</h1>
+                        </div>
+                        <div class="card__items">
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Penteado</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Maquiagem</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Unhas<span>(tradicional francesa)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Depilação<span>(1 area)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Design de sobrancelha</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Limpeza de pele</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Sala de noiva reservada</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Mesa de frutas</p>
+                            </div>
+                            <button class="btn">quero esse</button>
+                        </div>
+                    </div>
 
-    <!-- SCRIPTS  -->
+                    <div class="card">
+                        <div class="card__title">
+                            <h1>Ouro</h1>
+                        </div>
+                        <div class="card__items">
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Penteado</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Maquiagem</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Unhas<span>(tradicional francesa)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Depilação<span>(1 area)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Design de sobrancelha</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Limpeza de pele</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Sala de noiva reservada</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-x x__icon'></i>
+                                <p class="not">Mesa de frutas</p>
+                            </div>
+                            <button class="btn">quero esse</button>
+                        </div>
+                    </div>
 
-    <!-- FIREBASE CONFIGURATION -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-        import { getFirestore } from "firebase/firestore";
-        import { getStorage } from "firebase/storage";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyANXwUU5TsdOfb9zmJV7ZvAXA2SXj4Td2s",
-            authDomain: "corobeauty-a8045.firebaseapp.com",
-            projectId: "corobeauty-a8045",
-            storageBucket: "corobeauty-a8045.appspot.com",
-            messagingSenderId: "861678518795",
-            appId: "1:861678518795:web:974bed1e0afc819c4efd0e"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        // Initialize Realtime Database and get a reference to the service
-        export const storage = getStorage(app);
-        export const db = getFirestore(app);
-    </script>
-
-    <script src="./JavaScript/orders.js"></script>
-    <script src="./JavaScript/index.js"></script>
+                    <div class="card">
+                        <div class="card__title">
+                            <h1>Diamante</h1>
+                        </div>
+                        <div class="card__items">
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Penteado</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Maquiagem</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Unhas<span>(tradicional francesa)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Depilação<span>(1 area)</span></p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Design de sobrancelha</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Limpeza de pele</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Sala de noiva reservada</p>
+                            </div>
+                            <div class="item">
+                                <i class='bx bx-message-square-check check__icon'></i>
+                                <p>Mesa de frutas</p>
+                            </div>
+                            <button class="btn">quero esse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery section" id="gallery">
+            <div class="gallery__content">
+                <div class="row">
+                    <div class="section__title">
+                        <h1>Galeria</h1>
+                        <span>As princesas do nosso instragram</span>
+                    </div>
+                </div>
+                <div class="gallery__list__img row container">
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto1.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto2.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto3.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto4.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto5.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto6.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto7.png" alt="">
+                    </div>
+                    <div class="gallery__img">
+                        <img src="assests/img/img-insta/foto8.png" alt="">
+                    </div>
+                </div>
+                <button class="btn">ver mais</button>
+            </div>
+        </section>
+        <section class="testimonials section">
+            <div class="testimonials__content">
+                <div class="row">
+                    <div class="section__title">
+                        <h1>Depoimentos</h1>
+                        <span>Veja o que nossos clientes tem a dizer</span>
+                    </div>
+                </div>
+                <div class="testimonials__card container grid">
+                    <div class="testimonials__item flex">
+                        <div class="testimonials__img">
+                            <img src="assests/img/depoimentos/depoimento-1.png" alt="">
+                        </div>
+                        <div class="testimonials__box">
+                            <div class="testimonials__name">
+                                <h1>Celaena</h1>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                            </div>
+                            <div class="testimonials__descripition">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quidem quo saepe quibusdam nobis quas minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item flex">
+                        <div class="testimonials__img">
+                            <img src="assests/img/depoimentos/depoimento-2.png" alt="">
+                        </div>
+                        <div class="testimonials__box">
+                            <div class="testimonials__name">
+                                <h1>Aelin</h1>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                            </div>
+                            <div class="testimonials__descripition">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quidem quo saepe quibusdam nobis quas minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item flex">
+                        <div class="testimonials__img">
+                            <img src="assests/img/depoimentos/depoimento-1.png" alt="">
+                        </div>
+                        <div class="testimonials__box">
+                            <div class="testimonials__name">
+                                <h1>Luciana</h1>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                            </div>
+                            <div class="testimonials__descripition">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quidem quo saepe quibusdam nobis quas minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item flex">
+                        <div class="testimonials__img">
+                            <img src="assests/img/depoimentos/depoimento-2.png" alt="">
+                        </div>
+                        <div class="testimonials__box">
+                            <div class="testimonials__name">
+                                <h1>Patricia</h1>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                                <i class='bx bxs-star star__icon'></i>
+                            </div>
+                            <div class="testimonials__descripition">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quidem quo saepe quibusdam nobis quas minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <div class="footer__list section container grid">
+            <div class="footer__data">
+                <h1><a href="#"><img src="assests/img/logo.svg" alt=""></a></h1>
+                <div class="footer__data-social">
+                    <a href=""><i class='bx bxl-facebook social__icon'></i></a>
+                    <a href=""><i class='bx bxl-instagram social__icon'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp social__icon'></i></a>
+                </div>
+            </div>
+            <div class="footer__data">
+                <h2>nosso endereço</h2>
+                <p>Rua das noivas, 123<br> São Paulo - SP</p>
+            </div>
+            <div class="footer__data">
+                <h2>nosso horario</h2>
+                <p>Segunda á sexta<br>das 09:00 as 18:00</p>
+            </div>
+            <div class="footer__data">
+                <h2>Contato</h2>
+                <p>(11) 92323-2323</p>
+                <p>(11) 4141-4141</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy Todos os direitos reservados</p>
+            <span>Feito com 🤎 por MarquesCode</span>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="/JavaScript/website.js"></script>
 </body>
+
 </html>
