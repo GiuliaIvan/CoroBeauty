@@ -161,10 +161,10 @@ a{
     width: 100%;
     height: var(--header-height);
     background-color: rgba(255, 255, 255, 0.4);
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* z-index: 999999; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
     transition: all 400ms ease;
 }
 .navbar{
@@ -268,7 +268,7 @@ a{
 /* ABOUT */
 .about{
     width: 100%;
-    background-image: url(../img/arabesco-left-bottom.svg);
+    background-image: url(/Assets/websiteImg/arabesco-left-bottom.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: var(--z_negative);
@@ -311,7 +311,7 @@ a{
 /* SERVICES */
 .services{
     width: 100%;
-    background-image: url(../img/arabesco-left-top.svg);
+    background-image: url(/Assets/websiteImg/arabesco-left-top.svg);
     background-repeat: no-repeat;
     background-position: top left;
     z-index: var(--z_negative);
