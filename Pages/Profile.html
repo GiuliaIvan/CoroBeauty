@@ -28,7 +28,7 @@
             </div>
 
             <div class="sidebar">
-                <a href="/index.html">
+                <a href="../index.html">
                     <span class="material-icons-sharp">language</span>
                     <h3>Website</h3>
                 </a>
@@ -44,7 +44,7 @@
                     <span class="material-icons-sharp">phone</span>
                     <h3>Contact</h3>
                 </a> -->
-                <a href="/Pages/Profile.html" class="active">
+                <a href="../Pages/Profile.html" class="active">
                     <span class="material-icons-sharp">fingerprint</span>
                     <h3>Profile</h3>
                     <span class="message-count" style="color:white">26</span>
@@ -82,6 +82,7 @@
 
             <h2>Discounts</h2>
 
+            <!-- INSIGHTS -->
             <div class="insights">
                 <div class="sales">
                     <span class="material-icons-sharp">analytics</span>
@@ -103,6 +104,7 @@
                 </div>
                 <!------------ END OF SALES ------------>
 
+                <!-- EXPENSES -->
                 <div class="expenses">
                     <span class="material-icons-sharp">bar_chart</span>
                     <div class="middle">
@@ -123,6 +125,7 @@
                 </div>
                 <!------------ END OF EXPENSES ------------>
 
+                <!-- INCOME -->
                 <div class="income">
                     <span class="material-icons-sharp">stacked_line_chart</span>
                     <div class="middle">
@@ -145,6 +148,7 @@
             </div>
             <!------------ END OF INSIGHTS ------------>
 
+            <!-- RECENT ORDERS -->
             <div class="recent-orders">
                 <h2>Bookings</h2>
                 <table>
@@ -174,6 +178,8 @@
         <!------------ END OF MAIN ------------>
 
         <div class="right">
+
+            <!-- TOP MENU PROFILE -->
             <div class="top">
                 <button id="menu-btn">
                     <span class="material-icons-sharp">menu</span>
@@ -222,6 +228,8 @@
                 </div>
             </div>
             <!-- END OF TOP -->
+
+            <!-- RECENT UPDATES -->
             <div class="recent-updates">
                 <h2>Announcements</h2>
                 <div class="updates">
@@ -258,6 +266,8 @@
                 </div>
             </div>
             <!---------------------- END OF UPDATES  ---------------------->
+
+            <!-- SALES ANALYTICS -->
             <div class="sales-analytics">
                 <h2>Sales Analytics</h2>
                 <div class="item online">
@@ -310,11 +320,9 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- SCRIPTS  -->
-
     <!-- FIREBASE CONFIGURATION -->
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -341,8 +349,9 @@
         export const db = getFirestore(app);
     </script>
 
+    <!-- JAVASCRIPT LINKS -->
     <script src="/JavaScript/orders.js"></script>
     <script src="/JavaScript/profile.js"></script>
-</body>
 
+</body>
 </html>
