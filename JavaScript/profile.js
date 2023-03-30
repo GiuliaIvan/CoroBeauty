@@ -1,3 +1,4 @@
+// ------------ SIDE MENU ------------
 const sideMenu = document.querySelector("aside");
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
@@ -20,6 +21,11 @@ themeToggler.addEventListener("click", () => {
   themeToggler.querySelector("span").classList.toggle("active");
 });
 
+// ------------ END OF SIDE MENU ------------
+
+
+// ------------ BOOKINGS FETCHING ------------
+
 // fill orders in table
 Orders.forEach((order) => {
   const tr = document.createElement("tr");
@@ -41,8 +47,11 @@ Orders.forEach((order) => {
   document.querySelector("table tbody").appendChild(tr);
 });
 
+// ------------ END OF BOOKINGS ------------
 
-// TOP RIGHT PROFILE SUBMENU
+
+
+// ------------ TOP-RIGHT-PROFILE SUBMENU ------------
 let subMenu = document.getElementById("subMenu");
 
 function toggleMenu() {
