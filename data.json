@@ -1,31 +1,4 @@
 {
-  "Users": {
-    "id1": {
-      "bookings": "bookingsUser1",
-      "info": {
-        "age": 18,
-        "mail": "natalia@mail.com",
-        "name": "\"Natalia\"",
-        "phone": 40742589923,
-        "profilePicture": "url"
-      },
-      "password": "natalia1234",
-      "username": "Natalia"
-    },
-    "id2": {
-      "bookings": "bookingsUser2",
-      "info": {
-        "age": 21,
-        "mail": "rafa@mail.com",
-        "name": "Rafa",
-        "phone": 4077035520,
-        "profilePicture": "url"
-      },
-      "password": "rafa1234",
-      "username": "Rafa"
-    }
-  },
-
   "Bookings": {
     "bookingsUser1": {
       "appointment1": {
@@ -71,7 +44,6 @@
         "status": "Done"
       }
     },
-
     "bookingsUser2": {
       "appointment1": {
         "dateTime": "Feb 20, 14:55",
@@ -85,6 +57,32 @@
         "serviceName": "Eyebrows",
         "status": "Done"
       }
+    }
+  },
+  "Users": {
+    "id1": {
+      "bookings": "bookingsUser1",
+      "info": {
+        "age": 18,
+        "mail": "natalia@mail.com",
+        "name": "Natalia",
+        "phone": 40742589923,
+        "profilePicture": "url"
+      },
+      "password": "natalia1234",
+      "username": "Natalia"
+    },
+    "id2": {
+      "bookings": "bookingsUser2",
+      "info": {
+        "age": 21,
+        "mail": "rafa@mail.com",
+        "name": "Rafa",
+        "phone": 4077035520,
+        "profilePicture": "url"
+      },
+      "password": "rafa1234",
+      "username": "Rafa"
     }
   }
 }
