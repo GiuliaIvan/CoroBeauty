@@ -427,6 +427,9 @@ main .recent-orders .add-product{
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+    /* width: 40%; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main .recent-orders .add-product:hover{
@@ -692,6 +695,12 @@ main .recent-orders .add-product div h3{
         grid-template-columns: 7rem auto 23rem;
     }
 
+    aside .logo img {
+        width: 7rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     aside .logo h2{
         display: none;
     }
@@ -724,6 +733,10 @@ main .recent-orders .add-product div h3{
         left: 50%;
         transform: translateX(-50%);
         margin: 2rem 0 0 8.8rem;
+    }
+
+    main .recent-orders .add-product {
+        width: 50%;
     }
 
     main .recent-orders table{
@@ -813,6 +826,10 @@ main .recent-orders .add-product div h3{
 
     main .recent-orders a{
         margin-left: 0;
+    }
+
+    main .recent-orders .add-product {
+        width: 100%;
     }
 
     .right{
