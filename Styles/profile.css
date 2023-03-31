@@ -829,6 +829,8 @@ main .recent-orders .add-product div h3{
     }
 
     main .recent-orders .add-product {
+        background: var(--color-white);
+        color: var(--color-dark);
         width: 100%;
     }
 
