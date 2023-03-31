@@ -95,24 +95,25 @@ function appendBookings(Bookings) {
 }
 // ------------ END OF BOOKINGS ------------
 
-for (const booking of Bookings) {
-  function addNewUser() {
-    const mail = `${booking.serviceName}`;
-    const enrollmentType = `${booking.serviceName}`;
-    const img = `${booking.serviceName}`;
-    const id = `${booking.serviceName}`;
 
-    const newUser = {
-      serviceName: img,
-      dateTime: mail,
-      price: enrollmentType,
-      status: id,
-    };
+// ADD NEW BOOKING
+function addNewUser() {
+  const mail = "new booking";
+  const enrollmentType = "new booking";
+  const img = "new booking";
+  const id = "new booking";
 
-    _bookings.push(newUser);
-    appendBookings(_bookings);
-  }
+  const newUser = {
+    serviceName: mail,
+    dateTime: enrollmentType,
+    price: img,
+    status: id,
+  };
+
+  _bookings.push(newUser);
+  appendBookings(_bookings);
 }
+
 
 
 

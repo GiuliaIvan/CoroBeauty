@@ -156,11 +156,13 @@ aside .top{
 aside .logo{
     display: flex;
     gap: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 aside .logo img {
-    width: 2rem;
-    height: 2rem;
+    width: 10rem;
+    /* height: 2rem; */
 }
 
 aside .close{
@@ -397,6 +399,51 @@ main .recent-orders a{
     margin: 1rem auto;
     color: var(--color-primary);
 }
+
+
+
+main .recent-orders .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .recent-orders .item:hover{
+    box-shadow: none;
+}
+
+
+main .recent-orders .add-product{
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+main .recent-orders .add-product:hover{
+    background: var(--color-primary);
+    color: white;
+}
+
+main .recent-orders .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+main .recent-orders .add-product div h3{
+    font-weight: 600;
+}
+
 
 
 /* ================ RIGHT ================ */
@@ -687,8 +734,7 @@ main .recent-orders a{
         margin-left: -8.8rem;
     }
 
-    main table tbody tr td:last-child,
-    main table tbody tr td:first-child {
+    main table tbody tr td:last-child {
         display: none;
     }
 }
