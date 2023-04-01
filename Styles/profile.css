@@ -2,18 +2,18 @@
 
 /* -------------- ROOT VARIABLES -------------- */
 :root{
-    --color-primary: #E0C0D5;
+    --color-primary: #B38DAF;
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
-    --color-white: #B38DAF;
+    --color-white: #E0C0D5;
     --color-info-dark: #fff;
     --color-info-light: #dce1eb;
-    --color-dark: #fff;
+    --color-dark: #B38DAF;
     --color-light: rgba(132, 139, 200, 0.18);
     --color-primary-variant: #111e88;
     --color-dark-variant: #fff;
-    --color-background: #E0C0D5;
+    --color-background: #ffffff;
 
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
@@ -24,6 +24,10 @@
     --padding-1: 1.2rem;
 
     --box-shadow: 0 2rem 3rem var(--color-light);
+
+    /* ---------------- FONTS AND TYPOGRAPHY ---------------- */
+    --font-cursive: 'Dancing Script', cursive;
+    --body-font: 'Josefin Sans', sans-serif;
 }
 
 /* ---------------- DARK THEME VARIABLES ---------------- */
@@ -35,7 +39,6 @@
     --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
-
 
 *{
     margin: 0;
@@ -88,7 +91,8 @@ h1{
 }
 
 h2{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-family: var(--font-cursive);
 }
 
 h3{
@@ -115,11 +119,11 @@ small{
 }
 
 .text-muted{
-    color: var(--color-info-dark);
+    color: var(--color-primary);
 }
 
 p{
-    color: var(--color-dark-variant);
+    color: var(--color-primary);
 }
 
 b{
@@ -185,7 +189,7 @@ aside h3{
 
 aside .sidebar a{
     display: flex;
-    color: var(--color-info-dark);
+    color: var(--color-primary);
     margin-left: 2rem;
     gap: 1rem;
     align-items: center;
@@ -269,6 +273,18 @@ main h2 {
     margin-bottom: 0.8rem;
 }
 
+.left h3 {
+    color: var(--color-info-dark);
+}
+
+.insights .text-muted {
+    color: var(--color-info-dark);
+}
+
+.number p {
+    color: var(--color-info-dark);
+}
+
 main .insights > div {
     background: var(--color-white);
     padding: var(--card-padding);
@@ -283,19 +299,19 @@ main .insights > div:hover {
 }
 
 main .insights > div span {
-    background: var(--color-primary);
+    background: var(--color-info-dark);
     padding: 0.5rem;
     border-radius: 50%;
-    color: var(--color-white);
+    color: var(--color-primary);
     font-size: 2rem;
 }
 
 main .insights > div.expenses span{
-    background: var(--color-primary);
+    background: var(--color-info-dark);
 }
 
 main .insights > div.income span{
-    background: var(--color-primary);
+    background: var(--color-info-dark);
 }
 
 main .insights > div .middle{
@@ -601,6 +617,11 @@ main .recent-orders .add-product div h3{
 
 .right .recent-updates .updates:hover{
     box-shadow: none;
+}
+
+.right .recent-updates .updates p {
+    color: var(--color-info-dark);
+    /* line-height: 1.3rem; */
 }
 
 .right .recent-updates .updates .update{
