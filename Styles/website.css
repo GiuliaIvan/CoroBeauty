@@ -397,6 +397,9 @@ span {
     padding: 1.5rem;
     margin: 10px auto;
     transition: all 400ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .card:hover{
     transform: scale(1.1);
@@ -433,6 +436,7 @@ span {
 }
 .item .x__icon, .item .not{
     color: var(--second-color);
+    text-align: center;
 }
 .item .check__icon{
     color: var(--first-color);
