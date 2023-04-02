@@ -13,6 +13,7 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav");
 
+
 /*------------ REMOVE MENU MOBILE -------------*/
 const navLink = document.querySelectorAll(".nav__link");
 function linkAction() {
@@ -22,18 +23,19 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+
 /*==================== LEAVE THE LINK CLICKED WITH THE CLASS ACTIVE-LINK ====================*/
 const linkColor = document.querySelectorAll(".nav__link");
-
 function colorLink() {
   if (linkColor) {
     linkColor.forEach((L) => L.classList.remove("active-link"));
     this.classList.add("active-link");
   }
 }
-
 linkColor.forEach((L) => L.addEventListener("click", colorLink));
-/*==================== CHANGE HEADER COLOR ====================*/
+
+
+/*==================== CHANGE HEADER COLOR ON SCROLL ====================*/
 function scrollHeader() {
   const scrollHeader = document.getElementById("header");
   if (this.scrollY >= 100) scrollHeader.classList.add("scroll-header");
