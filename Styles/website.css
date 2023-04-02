@@ -470,6 +470,7 @@ span {
     margin: var(--mb-05);
     background-color: rgba(255, 255, 255, 0.4);
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
+    border-radius: 30px;
 }
 .gallery__img img:hover{
     transform: scale(1.1);
