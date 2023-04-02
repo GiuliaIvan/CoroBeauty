@@ -93,3 +93,7 @@
   background: linear-gradient(90deg, transparent, #b38daf);
   animation: btn-anim1 2s linear infinite;
 }
+
+.signup-button {
+  text-align: center;
+}
