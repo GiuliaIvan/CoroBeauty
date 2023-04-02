@@ -20,34 +20,10 @@ themeToggler.addEventListener("click", () => {
 
   themeToggler.querySelector("span").classList.toggle("active");
 });
-
 // ------------ END OF SIDE MENU ------------
 
 
 // ------------ BOOKINGS FETCHING ------------
-
-// fill orders in table
-// Orders.forEach((order) => {
-//   const tr = document.createElement("tr");
-//   const trContent = `
-//                         <td>${order.serviceName}</td>
-//                         <td>${order.dateTime}</td>
-//                         <td>${order.price}</td>
-//                         <td class="${
-//                           order.status === "Declined"
-//                             ? "danger"
-//                             : order.status === "Pending"
-//                             ? "warning"
-//                             : order.status === "Confirmed" ? "success"
-//                             : "primary"
-//                         }">${order.status}</td>
-//                         <td class="primary">Details</td>
-//                         `;
-//   tr.innerHTML = trContent;
-//   document.querySelector("table tbody").appendChild(tr);
-// });
-
-
 "use strict";
 
 /* ---------- Global Variables ---------- */
@@ -93,28 +69,25 @@ function appendBookings(Bookings) {
     tbody.appendChild(tr);
   }
 }
-// ------------ END OF BOOKINGS ------------
-
 
 // ADD NEW BOOKING
-function addNewUser() {
-  const mail = "new booking";
-  const enrollmentType = "new booking";
-  const img = "new booking";
-  const id = "new booking";
+function addNewBooking() {
+  const sN = "new booking";
+  const dT = "new booking";
+  const pricing = "new booking";
+  const stat = "new booking";
 
-  const newUser = {
-    serviceName: mail,
-    dateTime: enrollmentType,
-    price: img,
-    status: id,
+  const newBooking = {
+    serviceName: sN,
+    dateTime: dT,
+    price: pricing,
+    status: stat,
   };
 
-  _bookings.push(newUser);
+  _bookings.push(newBooking);
   appendBookings(_bookings);
 }
-
-
+// ------------ END OF BOOKINGS ------------
 
 
 // ------------ TOP-RIGHT-PROFILE SUBMENU ------------
@@ -123,3 +96,25 @@ let subMenu = document.getElementById("subMenu");
 function toggleMenu() {
   subMenu.classList.toggle("open-menu");
 }
+
+
+// fill orders in table
+// Orders.forEach((order) => {
+//   const tr = document.createElement("tr");
+//   const trContent = `
+//                         <td>${order.serviceName}</td>
+//                         <td>${order.dateTime}</td>
+//                         <td>${order.price}</td>
+//                         <td class="${
+//                           order.status === "Declined"
+//                             ? "danger"
+//                             : order.status === "Pending"
+//                             ? "warning"
+//                             : order.status === "Confirmed" ? "success"
+//                             : "primary"
+//                         }">${order.status}</td>
+//                         <td class="primary">Details</td>
+//                         `;
+//   tr.innerHTML = trContent;
+//   document.querySelector("table tbody").appendChild(tr);
+// });
