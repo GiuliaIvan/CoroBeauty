@@ -471,9 +471,10 @@ span {
     background-color: rgba(255, 255, 255, 0.4);
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
     border-radius: 30px;
+    transition: all 0.3s ease-in-out;
 }
 .gallery__img img:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 .gallery__content button{
     margin: 0 auto;
